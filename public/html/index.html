@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Lauren Davis</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Kalam|Kaushan+Script|Oleo+Script|Oswald|Pacifico|Permanent+Marker|Shrikhand" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js" type="text/javascript"></script>
+</head>
+<body ng-controller="mainController" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"> 
+   <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="">
+                <div class="logo">
+                <img src="../images/computer1.jpeg">
+                    <div class="content">
+
+                        <p class="intro-name">Lauren Davis</p> <br><br>
+                        <p class="intro-text">Developer &amp; Designer</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+    </header>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="container content-section center">
+         <div class="about-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                <div class=" center circle"><img src="../images/myAvatar.png"></div>
+                    <h2>A Little Bit About Me</h2>
+                    <p>I’m a web developer and designer based in Denver, Colorado. Started designing with indesign and photoshop, then later transitioned to programming and found myself in web development. </p>
+                    <h2>Skills</h2>
+                    <p>Fullstack Developer. Meaning that I am both a frontend and backend developer. Which also means I can design and develop anything to any specification. </p>
+                    <p>MongoDB | Express | AngularJS | Node</p>
+                    <img class="img-sizing" src="../images/mean.png" alt="">
+
+                    <ul class="skills">
+                      <li class="skill" aria-label="pro">HTML</li>
+                      <li class="skill" aria-label="pro">CSS</li>
+                      <li class="skill" aria-label="advanced">Javascript</li>
+                      <li class="skill" aria-label="advanced">AngularJS</li>
+                      <li class="skill" aria-label="advanced">MEAN Stack</li>
+                      <li class="skill" aria-label="average">JQuery</li>
+                      <li class="skill" aria-label="average">Photoshop</li>
+                      <li class="skill" aria-label="advanced">Indesign</li>
+                      <li class="skill" aria-label="advanced">Bootstrap</li>
+                    </ul>
+                    
+                   
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="work" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Basics of How I Work</h2>
+                    <p>I work with constant communication with whomever hires me and I try to focus on exactly what they want. I make sure to always design for cross platforms, whether on mobile or desktop my websites are always functional and clean.</p>
+                </div>
+                <div class="col-md-4">
+
+                    <img class="icon icons8-Idea" width="50" height="50" src="data:image/png;base64,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">
+                    <h3>Plan</h3>
+                    <p>We talk about ever thing you want on the site. You tell me your hopes and dreams for your website and we get into it so we can figure out as much detail as possible to ensure you are getting what you want. If you don't know what you want for sure you can just give the basics of what you want on your site and I will come up with designs for you. </p>
+                </div>
+                <div class="col-md-4">
+                    <img class="icon icons8-Hammer" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADrklEQVRoQ+2ZbU7bQBCGZ+wIVKkltmR+F05AOAHJCcoNCCcgN2g4QekJgBMUTkCOkJ4A+E0q22mlqjTxVGPjxHZs79rZDQmqJYSADTvPzte7Y4Q38uAb4YBaICPXvwCEs/Qh0AMA8BcQ4tAA8Pi7OTUebfv9UPeB1QL54fo9Qvgibxx5ADBExBsj2Lq17XchsMqnFggb4Lq/9ybw5woRj0IvAA2RjHMC9AwIWgGABUBtBNgDxI8Z7w1M2j5VCVQbJDYs9A5QHxCbDNOgxmk2lBh6Cn/bDAYIJ9FnyTOp0VEVdkuDJLxzg4gHIgMjqGfOsU+itVVCTwlIBEPWFMZsYHTihKeOvXNVZMzI9a+itWo8owwkNnhu4GphlIMwUBKGyOjs2h8Guj2jBSQNIw4dFWGmDSQJw9Vs17IOy5J3WRitIFwAJuAPuJoRwfmu3ezrgtEKwkY/uT/biMEdVyfHsmxRSa3rGe0gEYzH8uRAlPiLlY8eHMvaF8Hz31cE4vcR4bOotyQNHnk+8c+O1ZSyUWqRzIkUrXHdX60pTu4A0DLJPJSRJCN3fAxI34Do0bGtPZn9tYKE3R79e4YAglvHbh7LGBWr60i7NTu2jayeSx9tIGHFQv8OAVtE9L0BzbaMQbHcmVU7hjHNHv8+CIK2EWxd56lmLSBJiFB2VTjZ+NiTpTvtivwGqxwk64mwonDFqg0z7oXy/+WJ7j+LMEpB8sKJ90+FSSbmo8QOzoCMr469cyPKhaI+owykLCdSHT7hmZE77gLS5cx4gfTP6TOzy5kSEJnEzsIg4hAIuqFxBNey95gcmIFjWZ2lQWQgShP4xQtz78hJmfCmic/3cdNcCqQKRAyTmsBkQimWMjKNc+T7l6FHX/pTbZA6EKmcyMmHkee5kQLY2i+bsMwhyDdhu8Vra4HogEiGSplH0hCNdix5KoPogCirRikhOQsn9sQcorL61QkhginyxKxRihpQquJU1E6inCjaO9n0wDC6FAR91mxAi56oBLIKT2ShUmOlsNcUQ0iF1mtAzMNs3AUglv4PJuz0y9RzabK/JoRsyAtDa5MgCkNr0yByQTYRYgFkUyFSIJsMkQKJ67bsoKBus6tajWTXz8rvk+vxjPZIZhq4bhBZj4SvnEVDgnWEWMyReHJeMPFYV4j8qlUAs84QxX0kAxMY4xMiuIgGBeUvOWWTU/W6XK1VOOVbU4hS9Zt83cwlGcDslb3UVH3CVf9f5atu1Q1Wtf4/yKpOWnaff+lOqWASb0BHAAAAAElFTkSuQmCC">
+                    <h3>Build</h3>
+                    <p>Before I begin building I will give you a time estimate until we get to the next phase, which depends on what kind of site you would like and how big it is. This is when I will start to craft the site and create the features and designs to make your site extraordinary. </p>
+                </div>
+                <div class="col-md-4">
+                    <img class="icon icons8-Edit-Property" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACeUlEQVRoQ+2a3W3bMBDH76IARoA0JgH5PRvUnqDeoCPU3SCdIMgEQSaIs4EzQd0Jmk6QvlsFySRAgaLKBZStQpIlUx8MQxfSK0Xqfve/45EiUQhifw8ezpFoBoAMvHxIEuL88PnkgnOUZSZiJNQcED55aX/RKIKrkA/PykGkFFqJgIIJ58d3PgIJ8TSOMf4OQDJkjFeAKNINIRuijxCpTZHcbSeaXvAFzmRnD+JaqdqKuDas7feqcvlfaLUd2HU/I0g/azmSpHaO9Ir0ijTzQB9a2l+pF1LfZfOo2NbMv7vfLsvXTor8NyA2vdx1rE6KdP24zf49SJ/sFuLJ+qxlwSZrQ6yETP4njDgb7/We3eSRvdnqdgLxqSBqkJV4nALGlwi4CS9aBDT4wvnRz52K+AQSiYcZIF1vK0MyoMFkL0KrGmKDRXDrPUgOguCGgMaI+D6vDEmvQYoQIR/Okp/uoJY5GCLlRY6UFsBsThDcaIhUhS0YU2i5SvYiSJkSxSSPlLoGghkQqQAGY+9CqxGEpiP8HPKTuVcgbSE0jzcgXSC8AekK4QWIDYg3B7EF8aYgNiFyIKZlctt2ArobMTbJ9rcNkYCshNTl/kNbQ039iOhHdlfXCCIpdofTOqfNTk9yXwsiUcTkUVvtelOE+Pw1Ga+wdkq/kV921FMi7esMJL1hQUTfRpxNd6+dmkE4VSSS8h4AT9eKrNdHNpRwqogQv09j/HOfU2ED0yWcsuM5Ca1fQp0RwuV2vtESAKfrpXjzcHIOEgm1AISPpROHBQhnOVJ2KKTrCwIuAwjmdeqEafZ89dDS29IY1Ob6FOpQWgbwblF1gcxkcFX7C7pVj6mcja1WAAAAAElFTkSuQmCC">
+                    <h3>Edit</h3>
+                    <p>We go through a demo of the site and star to add content in and change up any design elements that don't work, or need more of. You tell me what you like or don't like and I will go back and fix it up so you have the best possible site you can have. </p>
+                </div>
+
+
+                <div class="col-lg-8 col-lg-offset-2">
+                    
+                    <!-- <h2>Previous Work</h2> -->
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section contact-section text-center">
+        <div class="">
+            <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+
+
+          <form action="/contact-form" class=" form-horizontal" method="post"  id="contact_form">
+          <fieldset>
+
+            <!-- Form Name -->
+            <h2>Get In Touch</h2>
+            <p class="text-muted">If you have a project that you want to start, want to redesign, think you need my help with something, or just to say hello, then message me below </p>
+          <div class="col-md-12">
+
+            <!-- Text input-->
+
+            <div class="form-group fixed-contact">
+              <div class="col-md-12 inputGroupContainer">
+                <div class="col-md-12 ">
+                  <input name="name" placeholder="Name" class="form-control"  type="text">
+                </div>
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <div class="col-md-12 inputGroupContainer">
+                  <div class="col-md-12">
+                    <input name="emailAdd" placeholder="Email Address" class="form-control"  type="text">
+                  </div>
+                </div>
+            </div>
+              
+            <div class="form-group">
+              <div class="col-md-12 inputGroupContainer">
+                <div class="col-md-12">
+                    <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Success message -->
+            <div class="alert alert-success" role="alert" id="success_message">Thanks for sending me a message! I will get back to you shortly.</div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-12 control-label"></label>
+              <div class="col-md-12">
+                <button type="submit" class="darkgreen-text btn btn-default" >Send <span class="glyphicon glyphicon-send"></span></button>
+              </div>
+            </div>
+
+            </div>
+          </fieldset>
+        </div>
+
+          </form>
+
+        </div>
+
+        <a href="https://github.com/LaurenTDavis"><img class="icon-social" src="../images/GitHub-Mark-64px.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/lauren-davis-167182100"><img class="icon-social" src="../images/linkedin.png" alt=""></a>
+
+
+        </div><!-- /.container -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Lauren Davis 2017</p>
+        </div>
+    </footer>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+  <script src="../js/main.js" type="text/javascript"></script>
+        
+</body>
+</html>
